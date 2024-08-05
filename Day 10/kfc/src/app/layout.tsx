@@ -18,9 +18,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+<<<<<<< Updated upstream
         <NavbarDesktop />
         {children}
         <Footer />
+=======
+        <SessionProvider>
+          <NavbarDesktop />
+          {children}
+          <Footer />
+          <Toaster />
+        </SessionProvider>
+>>>>>>> Stashed changes
       </body>
     </html>
   );
